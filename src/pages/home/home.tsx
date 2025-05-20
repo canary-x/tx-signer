@@ -8,7 +8,7 @@ export default function Home() {
   const { signMessage, data: signedMessage } = useSignMessage();
   const { address, isConnected } = useAccount();
   const { open } = useAppKit();
-  const data = "0xbb15f2ff1a6c61564959c013a44bebb8917685c303254d2dc5779763bbe39330"
+  const data = "0x9a2dc4c4ad5e7da2273154e8e7c1e03cb55ba69070887bd00314ecc8c4774b44"
   return (
     <section className="bg-gray-50">
       {!isConnected && (
