@@ -48,9 +48,7 @@ export default function Home() {
                 <Button
                   onClick={() =>
                     signMessage({
-                      message: {
-                        raw: data,
-                      },
+                      message: data,
                       account: address,
                     })
                   }
