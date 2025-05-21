@@ -1,6 +1,4 @@
-import { toast } from "sonner";
 import { Button, buttonVariants } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 import { useSignMessage, useAccount } from "wagmi";
 import { useAppKit } from "@reown/appkit/react";
 
@@ -48,7 +46,9 @@ export default function Home() {
                 <Button
                   onClick={() =>
                     signMessage({
-                      message: data,
+                      message: {
+                        raw: data,
+                      },
                       account: address,
                     })
                   }
